@@ -83,6 +83,11 @@ app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);  
 
+
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 //  app.all("*",(req,res,next)=>{
 //     next(new ExpressErrors(404,"Page not found!"));
 //  });
@@ -91,6 +96,7 @@ app.use("/",userRouter);
   let{statusCode=500,message="something went wrong!"}=err;
   res.status(statusCode).render("error.ejs",{err});
 });
+
 
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");
