@@ -1,0 +1,163 @@
+/* this is to prevent horizontal scrollbar */
+body, html {
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+ }
+
+body{
+    font-family: "Plus Jakarta Sans",sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* navbar */
+.navbar{
+    height: 4rem;
+    background-color: white;
+}
+/* navbar icon of compass */
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+/* navbar links like home, all listings, etc */
+.nav-link{
+    color: #000000 ;
+}
+
+.offcanvas-menu {
+   background-color: white !important;
+   width: 250px;
+ }
+/* Search bar design */
+.btn-search {
+   background-color: #fe424d;
+   color: #fff;
+   border-radius: 40px;
+   height: 40px;
+   font-size: 0.9rem;
+   padding: 0 1rem 0 1rem;
+ }
+ .btn-search:hover {
+   background-color: #fe424d;
+   color: #fff;
+ }
+ .btn-search i {
+   display: inline;
+   margin-right: 0.5rem;
+ }
+ .search-inp {
+   border-radius: 40px;
+   padding: 0.5rem 3rem 0.5rem 3rem;
+   font-size: 0.9rem;
+ }
+ 
+ /* Position the search form to always be visible at the top */
+ @media (max-width: 768px) {
+   .search-bar-top {
+     width: 100%;
+     margin-bottom: 1rem;
+   }
+ }
+
+ /* Footer */
+ .f-info-links a {
+    text-decoration: none;
+    color: #222222;
+ }
+ .f-info-links :hover{
+    text-decoration: underline;
+ }
+ .f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1 rem;
+    
+ }
+ .f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+ }
+ /* Cards */
+ .listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+ }
+ .card-img-top{
+    border-radius: 0.7rem !important;
+    width: 100% !important;
+  
+    object-fit: cover !important;
+ }
+ .card-text p{
+    font-weight: 400;
+ }
+ .listing-link{
+    text-decoration: none;
+ }
+ /* Card Effect */
+ .card-img-overlay{
+    opacity: 0;
+ }
+ .card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+ }
+
+ /* add new form page button */
+ .add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+ }
+ /* edit form page button */
+ .edit-btn{
+    background-color: #fe424d !important;
+    border: none !important ;
+ }
+ /* Show page  */
+ .show-image{
+    height: 400px;
+    width: 400px;
+ }
+ .btns{
+    display: flex;
+ }
+ .show-card{
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+ /* Show page Map */
+ /* #map{
+   height: 400px;
+    width: 100%;
+    margin-top: 20px;
+ } */
+
+ #map-container {
+   display: flex;
+   justify-content: center; /* center horizontally */
+   margin-top: 1rem;
+   margin-bottom: 40px;
+ }
+ #map { 
+   height: 350px;
+   width:50%; 
+   border: 1px solid rgb(207, 198, 198);
+
+   
+ }

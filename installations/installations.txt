@@ -1,0 +1,14 @@
+use --legacy-peer-deps to avoid any kind of version or any error during installtions of any package or anything.
+1) npm i password
+2) npm i password-local
+3) npm i password-local-mongoose
+to know more about how to use visit:- "npmjs.com/package/passport-local-mongoose"
+The hashing algorithm used in passport is "pbkdf2"
+4) Multer is used for multi-form data.(for image uploadation)
+5) third party service used for storing images or files is cloudinary.
+6) For map functionality we used openStreetMap+leaflet(frontend) nominatim
+
+7) for cloud databse service we used mongo atlas (online databse shifting)
+8) we used connect-mongo service as a session store in which session related info will be stored like cookies, user's expiry date, use related tokens,etc.
+9) session will logout by default after 14 days if user not done any activity.
+
